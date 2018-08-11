@@ -1,0 +1,20 @@
+# -*- coding:utf-8 -*-
+
+from urllib import request,error
+import ssl
+
+if __name__ == '__main__':
+
+    url = "https://i.zhaopin.com/"
+
+    headers = {'Cookie': 'adfbid2=0; ZP_OLD_FLAG=false; dywem=95841923.y; sts_deviceid=164a34417a32a8-0782eddc66b101-163e6953-1296000-164a34417a41b6; LastCity=%E5%8C%97%E4%BA%AC; LastCity%5Fid=530; urlfrom=121113803; urlfrom2=121113803; adfbid=0; adfcid=pzzhubiaoti1; adfcid2=pzzhubiaoti1; sts_sg=1; sts_sid=164add7f4d6227-0bbdd46432f0a3-163e6953-1296000-164add7f4d99f1; zp_src_url=https%3A%2F%2Fwww.baidu.com%2Fs%3Fie%3Dutf-8%26f%3D3%26rsv_bp%3D0%26rsv_idx%3D1%26tn%3Dbaidu%26wd%3D%25E6%2599%25BA%25E8%2581%2594%25E6%258B%259B%25E8%2581%2598%26rsv_pq%3Dfd66295400008b9b%26rsv_t%3D0a0dcoE6eJdRRtQ3X4yL2yB1Fo9fJwspBfabyoQayEJB%252BTFDp4%252BTuMY9c5I%26rqlang%3Dcn%26rsv_enter%3D1%26rsv_sug3%3D6%26rsv_sug1%3D5%26rsv_sug7%3D101%26rsv_sug2%3D1%26prefixsug%3Dzhil%26rsp%3D1%26inputT%3D2099%26rsv_sug4%3D3034%26rsv_sug%3D1; dywea=95841923.2228216168700154400.1531747423.1531747423.1531924969.2; dywec=95841923; dywez=95841923.1531924969.2.3.dywecsr=other|dyweccn=121113803|dywecmd=cnt|dywectr=%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98; Hm_lvt_38ba284938d5eddca645bb5e02a02006=1531747423,1531924969; Hm_lpvt_38ba284938d5eddca645bb5e02a02006=1531924969; __xsptplus30=30.2.1531924968.1531924968.1%231%7Cother%7Ccnt%7C121113803%7C%7C%23%23ddrHxvgyiAUdXt_wBRKZ6tmgv5avrAph%23; __utma=269921210.1850005880.1531747424.1531747583.1531924969.3; __utmc=269921210; __utmz=269921210.1531924969.3.3.utmcsr=other|utmccn=121113803|utmcmd=cnt|utmctr=%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98; _jzqa=1.2794138475449971700.1531747424.1531747424.1531924969.2; _jzqc=1; _jzqy=1.1531747424.1531924969.2.jzqsr=baidu|jzqct=%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98%E5%AE%98%E6%96%B9%E7%BD%91.jzqsr=baidu|jzqct=%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98; _jzqckmp=1; lastchannelurl=https%3A//passport.zhaopin.com/login; qrcodekey=9e799d8473234c8abd9330bc378dbfeb; firstchannelurl=https%3A//passport.zhaopin.com/login%3Fy7bRbP%3DdpmxkhDS7MDS7MDSScnq5F8g4_qtZ_R_vUYgLXg8.Ml; __utmt=1; _jzqb=1.3.10.1531924969.1; JsNewlogin=1875023141; JSloginnamecookie=18232533068; JSShowname=%E7%8E%8B%E6%B4%AA%E6%9D%B0; at=6245887dc42b49f797c1e07ccfdc31c1; Token=6245887dc42b49f797c1e07ccfdc31c1; rt=6b3947f9686944baa5419419a1485913; JSsUserInfo=36672168546b5d754377507147654771526350655969586b4e713b653f77587740655b6757685a6b5975447756714465477153635f6553693e6b3b714a65fa044f1a010258672068246b56751b7710711b650e7112630f6502692b6b4471416542774b7712650c670868526b38752577587146654c712463336555695d6b5871446551775777426559675168526b2a753d77587147654c71306326655569216b3871456544775577416554675268586b587544775e7122652371586356655369386b3c714a6541775e77246533672b68546b5a754977577144654571506354655b695b6b43714f654a771; uiioit=3d753d6a44640f38596d5b620635546842795d7955390b6b566e203671645575496a42649; ZP-ENV-FLAG=gray; __utmb=269921210.4.10.1531924969; dyweb=95841923.4.10.1531924969; Hm_lvt_363368edd8b243d3ad4afde198719c4a=1531747506,1531926255; Hm_lpvt_363368edd8b243d3ad4afde198719c4a=1531926255; ZL_REPORT_GLOBAL={%22//i%22:{%22actionIdFromI%22:%22c11070c9-e8a7-42bb-b1e1-f10b433baa17-i%22}}; sts_evtseq=8; stayTimeCookie=1531926255173; referrerUrl=https%3A//i.zhaopin.com/'}
+
+    req = request.Request(url, headers=headers)
+
+    context = ssl._create_unverified_context()
+
+    rsp = request.urlopen(req, context=context)
+
+    html = rsp.read().decode()
+
+    print(html)
