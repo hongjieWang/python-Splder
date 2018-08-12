@@ -63,11 +63,17 @@ def getPost(value):
         "Connection": "keep-alive",
         "Content-Length": len(data),
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "Cookie": "NTES_SESS=aicZo3tvJTD_jFRCW4QvC8bbDCW3W3aQM9Jes2H3KK8Y490e4zw3CZBxznQzS9RbDFA7vo3QZnaBGtI2vicJGmtaMdzEYzWPy3fSVsTXv24Sy6DoC94zuxGUTXphXINq0329Jo78wmfxVtEcVOubxoWE8JGWrgdPJTp8XMEgK5rofjBxstkOUcLcXP6Qpi44AhIZkrclPQ564bjt3M5yz3S8g; ANTICSRF=9cd36a130117688b76eec98667b81e42; S_INFO=1533824632|0|3&80##|julywhj; P_INFO=julywhj@163.com|1533824632|0|other|11&12|bej&1533811267&other#bej&null#10#0#0|182068&0||julywhj@163.com; OUTFOX_SEARCH_USER_ID=-622851639@10.168.8.76; JSESSIONID=aaaeegEGe2AL2hCez7Nuw; OUTFOX_SEARCH_USER_ID_NCOO=288396918.7876193; ___rl__test__cookies=1533977025972",
+        "Cookie": "NTES_SESS=aicZo3tvJTD_jFRCW4QvC8bbDCW3W3aQM9Jes2H3KK8Y490e4zw3CZBxznQzS9RbDFA7vo3QZnaBGtI2vicJGmta"
+                  "MdzEYzWPy3fSVsTXv24Sy6DoC94zuxGUTXphXINq0329Jo78wmfxVtEcVOubxoWE8JGWrgdPJTp8XMEgK5rofjBxstkOUcLcXP"
+                  "6Qpi44AhIZkrclPQ564bjt3M5yz3S8g; ANTICSRF=9cd36a130117688b76eec98667b81e42; S_INFO=1533824632|0|3&"
+                  "80##|julywhj; P_INFO=julywhj@163.com|1533824632|0|other|11&12|bej&1533811267&other#bej&null#10#0#0|"
+                  "182068&0||julywhj@163.com; OUTFOX_SEARCH_USER_ID=-622851639@10.168.8.76; JSESSIONID=aaaeegEGe2AL2hC"
+                  "ez7Nuw; OUTFOX_SEARCH_USER_ID_NCOO=288396918.7876193; ___rl__test__cookies=1533977025972",
         "Host": "fanyi.youdao.com",
         "Origin": "http://fanyi.youdao.com",
         "Referer": "http://fanyi.youdao.com/",
-        "User-Agent": " Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36",
+        "User-Agent": " Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+                      "68.0.3440.84 Safari/537.36",
         "X-Requested-With": "XMLHttpRequest"
     }
 
